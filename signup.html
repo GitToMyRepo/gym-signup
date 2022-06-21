@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gym Sign up</title>
+        <link href="styles.css" type="text/css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sign up</h1>
+            <form action="somepage.html" method="get"><!--this should be POST!-->
+                <label>Title *</label>
+                <select id="title" name="title" required>
+                    <option disabled selected>--Select --</option>
+                    <option value="mr">Mr</option>
+                    <option value="ms">Ms</option>
+                    <option value="mx">Mx</option>
+                </select>
+                <label for="firstName">First name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="surname">Surname *</label>
+                <input type="text" id="surname" name="surname" required>
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob">
+                <div>
+                <label for="membership">Membership level *</label>
+                <input type="radio" id="full" name="full">
+                <label class="radio-label">Full access</label>
+                <input type="radio" id="op" name="op">
+                <label class="radio-label">Off Peak</label>
+                <input type="radio" id="allg" name="allg">
+                <label class="radio-label">All gyms</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
