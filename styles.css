@@ -45,3 +45,11 @@ label.first {
     color: #f00;
 }
 */
+table, td, th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.priceTable {
+    display: none;
+}

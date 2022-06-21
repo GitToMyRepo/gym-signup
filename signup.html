@@ -26,14 +26,28 @@
                 <input type="date" id="dob" name="dob">
                 <div>
                 <label for="membership">Membership level *</label>
-                <input type="radio" id="full" name="full">
+                <input type="radio" id="full" value="full" name="membership">
                 <label class="radio-label">Full access</label>
-                <input type="radio" id="op" name="op">
+                <input type="radio" id="op" value="op" name="membership">
                 <label class="radio-label">Off Peak</label>
-                <input type="radio" id="allg" name="allg">
+                <input type="radio" id="allg" value="allg" name="membership">
                 <label class="radio-label">All gyms</label>
-                </div>
-                <button type="submit">Submit</button>
+                </div>               
+                <label for="acceptedTandC">I accept the <a href="tandc.html" target="_blank">terms and conditions</a></label>
+                <input type="checkbox" name="acceptedTandC" value="yes" id="acceptedTandC"> 
+
+                <script>
+                    const onSubmit = () => {
+                        console.log("clicked");
+                        let firstNameInput = document.getElementById("firstName");
+                        console.log(firstNameInput);
+                        firstNameInput.value= "Matt";
+
+                        let labels = document.getElementsByClassName("radio-label");
+                        console.log(labels);
+                    }
+                </script>
+                <button onClick="onSubmit();" type="button">Submit</button>
             </form>
         </div>
     </body>

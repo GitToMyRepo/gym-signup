@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terms and Conditions</title>
+        <link href="styles.css" type="text/css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+        <script>
+            let myName = "matt's book";
+            let myAge = 21;
+            const mySize = '600"';
+            const myColours =  ["red", "blue", 255255255 ];
+            console.log(myName, myAge);
+
+            if(myName !== "matt's book") {
+                console.log("they match");
+            }
+            else {
+                console.log("they don't");
+            }
+
+            let yourAge = "21";
+            console.log(myAge === +yourAge);
+
+            let myAddress;
+            console.log(myAddress != null);
+
+            //this is a comment
+
+            /*
+            this is a multi
+            line comment
+            */
+
+            let x = 6;
+            let y = 15;
+            x = x + y;
+            y = y / 4;
+
+            //x = 21
+            let z = x++;
+            console.log(x,z);
+            if (x === 6 || y < 15) {
+
+            }
+
+            const sentence = `My name is ${myName}` ;
+            const sentence2 = "My name is " + myName;
+            console.log(sentence);
+
+            const customer = {name : "Matt", 
+                                age: 21,
+                                children: ["Simon", "Denise"],
+                                preferences: {favouriteColour: "Blue"}
+                            };
+
+            customer.age = 22;
+            console.log(customer);
+                        
+            const customer2 = {customer,  surname:"Thornfield"};
+            console.log(customer2);
+
+            const customer3 = {...customer, age: 33, surname:"Smith"};
+            console.log(customer3);
+
+            let membershipTable = document.getElementById("membershipTable");
+            console.log(membershipTable);
+        </script>
+    </head>
+    <body>
+        <h1>Terms and Conditions</h1>
+        <p>These terms and conditions govern the basis on which we provide access to our gym facilities and fitness services, both at physical locations and online. Please read these terms carefully before you start using our services. </p>
+        <script>
+            const showPrices = () => {
+                
+                let priceLabel = document.getElementById("priceLabel");
+                let membershipTable = document.getElementById("membershipTable");
+                if (priceLabel.innerHTML === "&gt; Show Prices") {
+                    priceLabel.innerHTML = "^ Hide Prices";
+                    membershipTable.style.display = "block";
+                } else {
+                    priceLabel.innerHTML = "> Show Prices";
+                    membershipTable.style.display = "none";
+                }
+            }
+        </script>
+        <label onclick="showPrices();" id="priceLabel">&gt; Show Prices</label>
+        <div id="membershipTable" class="priceTable">
+        <table>
+            <thead>
+                <tr><th>Membership type</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Full Membership</td><td>&euro; 300</td></tr>
+                <tr><td>Off Peak</td><td>&euro; 100</td></tr>
+                <tr><td>All Gyms</td><td>&euro; 600</td></tr>
+                <tr><td colspan="2">Please contact us for more information</td></tr>
+            </tbody>
+        </table>
+        </div>
+    </body>
+</html>
