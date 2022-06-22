@@ -1,5 +1,6 @@
 github token: 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
 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
+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
 
 repo: https://github.com/GitToMyRepo/gym-signup.git
 
@@ -27,3 +28,4 @@ fatal: unable to auto-detect email address (got 'Administrator@EC2AMAZ-8RI616P.(
 C:\workspace\gym-signup>git config --global user.email "kennethng27@hotmail.com"
 
 C:\workspace\gym-signup>git config --global user.name "Ken Fullstack"
+
